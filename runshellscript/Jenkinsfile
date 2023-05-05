@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Execute shell') {
+            steps {
+                sh 'chmod +x sayhello.sh'
+                sh 'sayhello.sh ${FirstValue} ${SecondValue}'
+            }
+        }
+    }
+}
