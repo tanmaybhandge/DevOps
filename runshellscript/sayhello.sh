@@ -7,4 +7,4 @@ else
     TARGET=$2    
 fi
 
-echo "Learn $FirstValue , get $SecondValue"
+echo "Learn $TOPIC_NAME , get $TARGET"
