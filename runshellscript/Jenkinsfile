@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Execute shell') {
             steps {
-                sh 'chmod +x sayhello.sh'
-                sh 'sayhello.sh ${FirstValue} ${SecondValue}'
+                sh 'chmod +x runshellscript/sayhello.sh'
+                sh 'runshellscript/sayhello.sh ${FirstValue} ${SecondValue}'
             }
         }
     }
