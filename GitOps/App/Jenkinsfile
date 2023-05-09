@@ -9,8 +9,8 @@ node {
 
     stage('Build image') {
   
-       //app = docker.build("tanmayb/images")
-       sh 'docker build -t tanmayb/jenkinstest:$BUILD_NUMBER ./GitOps/App'
+       app = docker.build("tanmayb/images", "./GitOps/App")
+       //sh 'docker build -t tanmayb/jenkinstest:$BUILD_NUMBER ./GitOps/App'
     }
 
     stage('Test image') {
