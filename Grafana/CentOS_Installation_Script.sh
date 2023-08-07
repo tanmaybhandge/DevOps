@@ -31,3 +31,4 @@ sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 
 echo "Grafana installation and configuration completed."
+sudo systemctl status grafana-server
