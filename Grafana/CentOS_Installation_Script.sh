@@ -1,10 +1,12 @@
 #!/bin/bash
 
-# You can perform the sudo yum update -y
+sudo yum update -y
+sudo yum update -y nss curl libcurl
 
 # Install required dependencies
 sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 sudo yum install -y initscripts fontconfig
+
 
 # Add Grafana repository and install Grafana
 sudo tee /etc/yum.repos.d/grafana.repo <<EOF
